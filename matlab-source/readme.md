@@ -1,1 +1,1 @@
-This folder contains all MATLAB files.
+This folder contains all MATLAB files. The three parts of the projects are contained in the files [main1.m](https://github.com/sabrimeyer/numerical-de/blob/main/matlab-source/main1.m), [main2.m](https://github.com/sabrimeyer/numerical-de/blob/main/matlab-source/main2.m) and [main3.m](https://github.com/sabrimeyer/numerical-de/blob/main/matlab-source/main3.m), respectively.
