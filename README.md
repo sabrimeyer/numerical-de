@@ -4,4 +4,4 @@ As part of my undergraduate studies at the University of Basel, I undertook a pr
 
 The project is divided into three distinct sections: Part I, Part II, and Part III, with each section having a corresponding "main"-MATLAB file.
 
-The file [presentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main/presentation.pdf) was used to present and discuss the results of the project. 
+The file [presentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main/documentation/presentation.pdf) was used to present and discuss the results of the project. 
