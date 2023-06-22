@@ -12,4 +12,4 @@ We are particularly interested in the convergence rates.
 
 **Part III:*** Finally, we do the analogous analysis as in Part II, but this time with the slightly more complicated RLC low-pass filter.
 
-The file [presentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main/documentation/presentation.pdf) was used to present and discuss the results of the project. Complementary to the presentation, the file [documentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main/documentation/documentation.pdf) written in LaTeX is included.
+The file [presentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main/documentation/presentation.pdf) was used to present and discuss the results of the project (this pdf also contains the circuits and their corresponding DE used in Part II and Part III). Complementary to the presentation, the file [documentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main/documentation/documentation.pdf) written in LaTeX is included.
