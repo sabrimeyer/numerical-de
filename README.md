@@ -16,4 +16,4 @@ The file [presentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main
 
 ### Supplementary Material
 
-During the year 2020, I engaged in further courses on the numerical aspects of differential equations at the University of Basel. Consequently, I deemed it appropriate to include the three programming assignments within this repository for archival purposes. These assignments can be accessed in the designated folder named [further-work]().
+During the year 2020, I engaged in further courses on the numerical aspects of differential equations at the University of Basel. Consequently, I deemed it appropriate to include the three programming assignments within this repository for archival purposes. These assignments can be accessed in the designated folder named [further-work](https://github.com/sabrimeyer/numerical-de/tree/main/further-work).
