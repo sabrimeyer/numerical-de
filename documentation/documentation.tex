@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{times}
+\usepackage[nohead,bottom=3cm,top=2cm,a4paper]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[nswissgerman]{babel}
+\usepackage{listings}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+% for matlab source-code
+\newcommand{\matlab}[1]{%
+\begin{small}
+\lstinputlisting[caption={\texttt{#1}},basicstyle={\ttfamily},commentstyle={\color{black!50!red}\itshape},frame=tb,keywordstyle={\color{black!60!green}\bfseries},stringstyle=\color{black!60!orange},language=Matlab,breaklines=true,numbers=left,numberstyle={\color{black!40!blue}}]{#1}%
+\end{small}
+}
+
+
+
+\title{Resultate aus dem Projekt zur Einf\"uhrung in die Numerik im Fr\"uhjahrsemester 2019}
+\author{von Sabri Meyer}
+
+\begin{document}
+\maketitle
+
+
+%%%%
+\section*{Part I}
+%
+\begin{center}
+  \includegraphics[width=11cm]{plots/main1plot.png}
+\end{center}
+\paragraph{Diskussion}
+Im obigen Plot lassen sich die Fehler zwischen der Approximation des jeweiligen Verfahrens und der analytischen Lösung erkennen. Zum Vergleich sind die gestrichelten Hilfsfunktionen $h, h^2, h^3$ und  $h^4$ eingezeichnet, welche wegen der loglog-Skalierung linear erscheinen. Die Steigung dieser Linien repräsentiert dabei die Potenz von $h$.
+
+Somit erkennen wir aus der Steigung der Linien sofort, dass die Fehler jeweils die gleiche Fehlerordnung haben, wie die entsprechende Funktionen $h, h^2, h^3$ und  $h^4$. Diese Tatsache bestätigt die Konsistenz mit der mathematischen Theorie: Das $p$-te Verfahren hat eine Fehlerordnung von $\mathcal{O}(p)$ und somit Konsistenzordnung $p$.
+
+
+
+%%%%
+\section*{Part II}
+%
+\begin{center}
+  \includegraphics[width=7cm]{plots/main2plot1.png}
+  \hfill{}
+  \includegraphics[width=7cm]{plots/main2plot2.png}
+  \includegraphics[width=7cm]{plots/main2plot3.png}
+\end{center}
+\paragraph{Diskussion}
+In der obigen Abbildung werden für die Feinheiten $n=10000,20000,30000$ jeweils die vier Verfahren, angewandt auf das \emph{RC-Tiefpass-Filter}, und danach die zugehende Spannung $U_i$ und die Spannung im Kondensator $U_2$ in Abhängigkeit nach der Zeit $t$ geplottet.
+
+Wir erkennen sofort, dass es sich um eine nicht-lineare Dämpfung der Kondensatorspannung handelt. Der Formunterschied der Dämpfung ist für $n=10000$ am grössten. Für grössere $n$ wird der Unterschied der Dämpfung weniger ersichtlich. Darüber hinaus lassen sich für $n=10000$ gelegentlich kleine Spikes in den Spannungen erkennen.
+
+Desweiteren bemerken wir, dass die Form der Dämpfung wie folgt physikalisch interpretiert werden kann: Ist die Form (des roten Kegels) breiter, so wird die Dämpfung gestärkt. Ist die Form schmaler, so wird sie geschwächt.
+
+Vergrössern wir den Widerstand $R$, so wird die Dämpfung leicht geschwächt. Analog wird die Dämpfung leicht verstärkt, wenn wir den Widerstand verringern. Vergrössen wir die Kapazität $C$, so wird die Dämpfung leicht gestärkt. Verringern wir stattdessen die Kapazität leicht, so wir die Dämpfung sogar stark gestärkt.
+
+Das wichtigste Resultat bezüglich der Genauigkeit der Approximationen ist jene des Runge-Kutta-Verfahrens: Für jedes der $n$ scheint die Form der Dämpfung ähnlich zu bleiben.
+
+
+%%%%
+\section*{Part III}
+%
+\begin{center}
+  \includegraphics[width=7cm]{plots/main3plot1.png}
+  \hfill{}
+  \includegraphics[width=7cm]{plots/main3plot2.png}
+  \includegraphics[width=7cm]{plots/main3plot3.png}
+\end{center}
+\paragraph{Diskussion}
+Oben dargestellt, sind die analogen Spannung-Zeit-Plots des \emph{RLC-Tiefpass-Filters}. Der Unterschied ist nun, dass wir nun eine Spule mit Impedanz zum System hinzugefügt haben, und dass wir den Widerstand und den Kondensator parallel geschaltet haben, woraus wir also zwei Schlaufen im elektrischen Kreislauf erhalten.
+
+Vergleichen wir die Resultate dieses Plots mit denjenigen des \emph{RC-Tiefpass-Filters}, so fällt auf, dass die Dämpfung viel stärker ist. D.h. also, dass die Form der Dämpfung mit der Zeit schneller schmal wird. Auch hier unterscheiden sich die Resultate am stärksten zwischen den Verfahren bei $n=10000$. Die gelegentlichen Spikes sind auch hier aufzufinden.
+Für $n=30000$ scheint die Dämpfung bei allen Verfahren fast übereinzustimmen.
+
+
+
+\end{document}
