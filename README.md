@@ -10,6 +10,10 @@ We are particularly interested in the convergence rates.
 
 **Part II:** Next, we apply all four methods for solving the DE arising in the analysis of a RC low-pass filter and study the results specifically by considering the time-evolution of the voltages in the circuit.
 
-**Part III:*** Finally, we do the analogous analysis as in Part II, but this time with the slightly more complicated RLC low-pass filter.
+**Part III:** Finally, we do the analogous analysis as in Part II, but this time with the slightly more complicated RLC low-pass filter.
 
 The file [presentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main/documentation/presentation.pdf) was used to present and discuss the results of the project (this pdf also contains the circuits and their corresponding DE used in Part II and Part III). Complementary to the presentation, the file [documentation.pdf](https://github.com/sabrimeyer/numerical-de/blob/main/documentation/documentation.pdf) written in LaTeX is included.
+
+### Supplementary Material
+
+During the year 2020, I engaged in further courses on the numerical aspects of differential equations at the University of Basel. Consequently, I deemed it appropriate to include the three programming assignments within this repository for archival purposes. These assignments can be accessed in the designated folder named [further-work]().
